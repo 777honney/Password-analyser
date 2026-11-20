@@ -1,6 +1,4 @@
-#Password dico
-
-import re 
+#Password analyser algorithm
 import string
 
 number="0123456789"
