@@ -1,7 +1,9 @@
+
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Password Analyser</title>
     <link rel="stylesheet"
     href="https://pyscript.net/releases/2026.7.3/core.css">
@@ -11,14 +13,60 @@
 <body>
     <h1>Password Analyser</h1>
 
+    <p>Enter your password below to analyze its strength:</p>
+
     <input type="password" id="password"
     placeholder="Enter your password">
+    <button id="analyze">Analyze</button>
+    <pre id="result"></pre>
+    <script type="py">
 
-    <button py-click="analyze_password"> Analyze </button>
+from pyscript import document, when
+import string
 
-    <p id="result"></p>
+@when("click", "#analyze")
+def analyze_password(event):
 
-    <script type="py" src="./mainalgo.py"></script>
+    password = document.querySelector("#password").value
 
+    number="0123456789"
+    uppercase="ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+    lowercase="abcdefghijklmnopqrstuvwxyz"
+
+    # Weak Password Conditions
+
+    messages = []
+    if len(password) < 8 :
+        messages.append("It is less than 8 characters long.")
+    else:
+        messages.append("Password length is sufficient.")
+
+    if not any(char in number for char in password):
+        messages.append("It does not contain any numbers.")
+    else:
+        messages.append("Password contains at least one number.")
+
+    if not any(char in uppercase for char in password):
+        messages.append("It does not contain any uppercase letters.")
+    else:
+        messages.append("Password contains at least one uppercase letter.")
+
+    if not any(char in lowercase for char in password):
+        messages.append("It does not contain any lowercase letters.")
+    else:
+        messages.append("Password contains at least one lowercase letter.")
+
+    if len(password) >= 8 and any(char in number for char in password) and any(char in uppercase for char in password) and any(char in lowercase for char in password):
+        messages.append("STRONG PASSWORD: It meets all the criteria for a strong password.")
+    else:
+        messages.append("")
+
+    if len(password) < 8 or not any(char in number for char in password) or not any(char in uppercase for char in password) or not any(char in lowercase for char in password):
+        messages.append("WEAK PASSWORD: It does not meet all the criteria for a strong password.")
+    else:
+        messages.append("")
+
+    document.querySelector("#result").innerText = "\n".join(messages)
+    </script>
 </body>
 </html>
