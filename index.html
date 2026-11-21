@@ -1,15 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Password Analyser</title>
-    <link rel="stylesheet" href="https://pyscript.net/releases/2026.7.3/core.css" />
-<script type="module" src="https://pyscript.net/releases/2026.7.3/core.js"></script>
+    <link rel="stylesheet"
+    href="https://pyscript.net/releases/2026.7.3/core.css">
+    <script type="module"
+    src="https://pyscript.net/releases/2026.7.3/core.js"></script>
 </head>
 <body>
-    <py-script> 
-    print("Hello, World!")
-     </py-script>
+    <h1>Password Analyser</h1>
+
+    <input type="password" id="password"
+    placeholder="Enter your password">
+
+    <button py-click="analyze_password"> Analyze </button>
+
+    <p id="result"></p>
+
+    <script type="py" src="./mainalgo.py"></script>
+
 </body>
 </html>
