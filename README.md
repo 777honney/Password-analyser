@@ -1,5 +1,7 @@
 # 🔐 Password Analyser
 
+NOT FINISHHHHHHHHHHHHHHHHHHHHH
+
 A small tool that analyses the strength of a password using four simple criteria. The project comes in **two versions**:
 
 - a **console** version in Python (terminal);
