@@ -147,8 +147,3 @@ In the web version, messages are first collected in a list (`messages`), then di
 - **HTML5**
 - **[PyScript](https://pyscript.net/)** to run Python in the browser
 
----
-
-## 📄 License
-
-Project created for educational purposes. Free to use and modify.
