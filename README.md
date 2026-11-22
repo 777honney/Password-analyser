@@ -119,7 +119,7 @@ In the web version, messages are first collected in a list (`messages`), then di
 ## 🔒 Privacy
 
 - The password you enter is **neither stored nor sent** to any server: the analysis runs entirely locally (in the terminal or in the browser).
-- Still, it is not recommended to test your real, sensitive passwords here.
+
 
 ---
 
