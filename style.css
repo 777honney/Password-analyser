@@ -1,7 +1,41 @@
-body {color : #fff; background-color: #a87d7d; font-family: Arial, sans-serif; margin: 0; padding: 0;}
 
-h1 {color: #e508087a; text-align: center; margin-top: 20px;}
+h1 {color: #e508087a; text-align: center; margin-top: 40px; font-size: 48px;}
 
 p {text-align: center; font-size: 18px; margin-top: 10px;}
 
 button {display: block; margin: 30px auto; padding: 10px 20px; font-size: 22px; background-color: #e50808; color: #fff; border: none; border-radius: 5px; cursor: pointer;}
+
+input[type="password"] {display: block; margin: 20px auto; padding: 10px; font-size: 18px; width: 80%; max-width: 400px; border: 1px solid #ccc; border-radius: 5px;}
+
+pre {background-color: #333; color: #fff; padding: 20px; border-radius: 5px; margin: 20px auto; width: 80%; overflow-x: auto;}  
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(
+        -45deg,
+        #080808,
+        #130164,
+        #100000,
+        #003470
+    );
+
+    background-size: 400% 400%;
+    animation: fondAnime 12s ease infinite;
+
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+@keyframes fondAnime {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
