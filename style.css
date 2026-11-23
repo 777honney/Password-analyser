@@ -1,13 +1,138 @@
 
-h1 {color: #e508087a; text-align: center; margin-top: 40px; font-size: 48px;}
+/* style.css */
 
-p {text-align: center; font-size: 18px; margin-top: 10px;}
+/* Importation de la police depuis Google Fonts */
 
-button {display: block; margin: 30px auto; padding: 10px 20px; font-size: 22px; background-color: #e50808; color: #fff; border: none; border-radius: 5px; cursor: pointer;}
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap');
 
-input[type="password"] {display: block; margin: 20px auto; padding: 10px; font-size: 18px; width: 80%; max-width: 400px; border: 1px solid #ccc; border-radius: 5px;}
+/* titre */
+h1 {
+    color: #00bfff;
+    font-family: 'Orbitron', sans-serif;
+    text-align: center;
+    margin-top: 40px;
+    font-size: 48px;
+    font-weight: bold;
+    letter-spacing: 2px;
 
-pre {background-color: #333; color: #fff; padding: 20px; border-radius: 5px; margin: 20px auto; width: 80%; overflow-x: auto;}  
+    text-shadow:
+        0 0 5px #00bfff,
+        0 0 15px #008cff,
+        0 0 30px #0055ff;
+}
+
+/* text */
+p {
+    text-align: center;
+    font-size: 18px;
+    margin-top: 15px;
+    color: #dbeeff;
+    line-height: 1.7;
+    text-shadow: 0 0 8px #008cff55;
+}
+
+/* bouton */
+button {
+    display: block;
+    margin: 30px auto;
+    padding: 14px 30px;
+
+    font-size: 22px;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: bold;
+    letter-spacing: 1px;
+
+    background: linear-gradient(135deg, #008cff, #003cff);
+    color: white;
+
+    border: 1px solid #00bfff;
+    border-radius: 12px;
+
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    box-shadow:
+        0 0 10px #008cff88,
+        0 0 25px #0055ff55;
+}
+
+/* Agrandissement bouton */
+button:hover {
+    transform: translateY(-5px) scale(1.05);
+
+    background: linear-gradient(135deg, #00bfff, #0055ff);
+
+    box-shadow:
+        0 0 15px #00bfff,
+        0 0 35px #008cff,
+        0 0 55px #0055ff88;
+}
+
+/* clic bouton */
+button:active {
+    transform: scale(0.95);
+
+    box-shadow:
+        0 0 15px #8800ffa0,
+        0 0 35px #9602e0bc,
+        0 0 55px #8800ffe0;
+}
+
+/* Champ de mot de passe */
+input[type="password"] {
+    display: block;
+    margin: 20px auto;
+    padding: 14px;
+
+    font-size: 18px;
+    width: 80%;
+    max-width: 400px;
+
+    background: #07182b;
+    color: #ffffff;
+
+    border: 2px solid #007bff;
+    border-radius: 10px;
+
+    outline: none;
+    transition: all 0.3s ease;
+
+    box-shadow: 0 0 10px #007bff33;
+}
+
+/* QUAND ON CLIQUE DANS LE CHAMP */
+input[type="text"]:focus {
+    border-color: #00bfff;
+    text-align: center;
+    align-items: center;
+    box-shadow:
+        0 0 10px #00bfff,
+        0 0 25px #008cff66;
+}
+
+/* ZONE DE TEXTE POUR LES RÉSULTATS */
+pre {
+    background: #061525;
+    color: #00c8ff;
+
+    padding: 25px;
+    border-radius: 12px;
+
+    margin: 25px auto;
+    width: 80%;
+    max-width: 800px;
+
+    overflow-x: auto;
+    text-align: left;
+
+    border: 1px solid #007bff;
+    font-family: 'Orbitron', sans-serif;
+
+    box-shadow:
+        0 0 10px #007bff55,
+        0 0 25px #003cff33;
+}
+
 
 body {
     min-height: 100vh;
@@ -23,7 +148,7 @@ body {
     animation: fondAnime 12s ease infinite;
 
     color: white;
-    font-family: Arial, sans-serif;
+    font-family: 'Orbitron', sans-serif;
 }
 
 @keyframes fondAnime {
