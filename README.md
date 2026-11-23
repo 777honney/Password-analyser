@@ -1,5 +1,7 @@
 # 🔐 Password Analyser
 
+NOT FINISHHHHHHHHHHHHHHHHHHHHH
+
 A small tool that analyses the strength of a password using four simple criteria. The project comes in **two versions**:
 
 - a **console** version in Python (terminal);
@@ -117,7 +119,7 @@ In the web version, messages are first collected in a list (`messages`), then di
 ## 🔒 Privacy
 
 - The password you enter is **neither stored nor sent** to any server: the analysis runs entirely locally (in the terminal or in the browser).
-- Still, it is not recommended to test your real, sensitive passwords here.
+
 
 ---
 
@@ -134,8 +136,7 @@ In the web version, messages are first collected in a list (`messages`), then di
 - Add a check for **special characters** (the `string` module is already imported in the code: `string.punctuation`).
 - Display a **score** or strength meter (weak / medium / strong).
 - Compare the password against a **list of common passwords**.
-- Refactor the code into functions to avoid repeating the tests.
-- Improve the web interface (colours, visual strength indicator).
+- Add css to the index page 
 
 ---
 
@@ -145,8 +146,3 @@ In the web version, messages are first collected in a list (`messages`), then di
 - **HTML5**
 - **[PyScript](https://pyscript.net/)** to run Python in the browser
 
----
-
-## 📄 License
-
-Project created for educational purposes. Free to use and modify.
