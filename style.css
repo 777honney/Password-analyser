@@ -101,13 +101,42 @@ input[type="password"] {
 }
 
 /* QUAND ON CLIQUE DANS LE CHAMP */
+
+input[type="text"] {
+    display: block;
+
+    /* Centrer la box */
+    margin: 30px auto;
+
+    /* Dimensions */
+    width: 80%;
+    max-width: 450px;
+    padding: 15px;
+
+    /* Texte */
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    font-family: 'Orbitron', sans-serif;
+
+    /* Apparence */
+    background: #07182b;
+    border: 2px solid #007bff;
+    border-radius: 12px;
+
+    outline: none;
+    transition: all 0.3s ease;
+}
 input[type="text"]:focus {
     border-color: #00bfff;
-    text-align: center;
-    align-items: center;
+
     box-shadow:
         0 0 10px #00bfff,
         0 0 25px #008cff66;
+}
+input[type="text"]::placeholder {
+    color: #7ba9d6;
+    text-align: center;
 }
 
 /* ZONE DE TEXTE POUR LES RÉSULTATS */
