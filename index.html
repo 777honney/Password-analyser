@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Password Analyser</title>
     <link href="style.css" rel="stylesheet">
+    <link href="java.js" rel="script">
     <link rel="stylesheet"
     href="https://pyscript.net/releases/2026.7.3/core.css">
     <script type="module"
@@ -16,10 +17,16 @@
 
     <p>Enter your password below to analyze its strength:</p>
 
-   <input type="text" id="password"
+
+    <input type="text" id="password"
     placeholder="Enter your password">
 
-    <button id="analyze">Analyze</button>
+    <button id="analyze">ANALYZE</button>
+
+    <button type="reset" class="clear-btn">
+        CLEAR
+    </button>
+
     <pre id="result"></pre>
     <script type="py">
 
