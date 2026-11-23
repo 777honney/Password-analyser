@@ -136,8 +136,7 @@ In the web version, messages are first collected in a list (`messages`), then di
 - Add a check for **special characters** (the `string` module is already imported in the code: `string.punctuation`).
 - Display a **score** or strength meter (weak / medium / strong).
 - Compare the password against a **list of common passwords**.
-- Refactor the code into functions to avoid repeating the tests.
-- Improve the web interface (colours, visual strength indicator).
+- Add css to the index page 
 
 ---
 
