@@ -2,6 +2,9 @@
 
 NOT FINISHHHHHHHHHHHHHHHHHHHHH
 
+<img width="939" height="440" alt="image" src="https://github.com/user-attachments/assets/da3bb360-5559-4adb-919e-a1886a8d4d1a" />
+
+
 A small tool that analyses the strength of a password using four simple criteria. The project comes in **two versions**:
 
 - a **console** version in Python (terminal);
@@ -10,6 +13,9 @@ A small tool that analyses the strength of a password using four simple criteria
 ---
 
 ## ✨ Features
+
+<img width="941" height="438" alt="image" src="https://github.com/user-attachments/assets/66010958-eab3-4637-803d-6a121c735a32" />
+
 
 The analyser checks that the password meets the following criteria:
 
@@ -143,6 +149,6 @@ In the web version, messages are first collected in a list (`messages`), then di
 ## 🛠️ Technologies
 
 - **Python 3**
-- **HTML5**
+- **HTML + CSS**
 - **[PyScript](https://pyscript.net/)** to run Python in the browser
 
