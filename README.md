@@ -31,6 +31,9 @@ For each criterion, a message tells you whether it is met. At the end, the progr
 - **STRONG PASSWORD** if all 4 criteria are met;
 - **WEAK PASSWORD** if at least one criterion is not met.
 
+<img width="935" height="436" alt="image" src="https://github.com/user-attachments/assets/bbd73580-a80c-444b-a415-0f54c8b973a5" />
+
+
 ---
 
 ## 📁 Project structure
