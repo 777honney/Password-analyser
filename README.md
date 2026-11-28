@@ -142,10 +142,11 @@ In the web version, messages are first collected in a list (`messages`), then di
 
 ## 🚀 Possible improvements
 
+-Fix the clear button
 - Add a check for **special characters** (the `string` module is already imported in the code: `string.punctuation`).
 - Display a **score** or strength meter (weak / medium / strong).
 - Compare the password against a **list of common passwords**.
-- Add css to the index page 
+
 
 ---
 
